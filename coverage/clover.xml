@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708431677974" clover="3.2.0">
-  <project timestamp="1708431677975" name="All files">
-    <metrics statements="46" coveredstatements="39" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="9" elements="58" coveredelements="51" complexity="0" loc="46" ncloc="46" packages="5" files="9" classes="9"/>
+<coverage generated="1708439195078" clover="3.2.0">
+  <project timestamp="1708439195078" name="All files">
+    <metrics statements="50" coveredstatements="39" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="9" elements="62" coveredelements="51" complexity="0" loc="50" ncloc="50" packages="6" files="10" classes="10"/>
+    <package name="data.usecases.add-account">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="db-add-account-protocols.ts" path="C:\Cursos\clean-node-api\src\data\usecases\add-account\db-add-account-protocols.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
     <package name="presentation.controllers.signup">
       <metrics statements="24" coveredstatements="20" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="signup-protocols.ts" path="C:\Cursos\clean-node-api\src\presentation\controllers\signup\signup-protocols.ts">
@@ -83,11 +93,11 @@
     </package>
     <package name="utils">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="email-validator.ts" path="C:\Cursos\clean-node-api\src\utils\email-validator.ts">
+      <file name="email-validator-adapter.ts" path="C:\Cursos\clean-node-api\src\utils\email-validator-adapter.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
       </file>
     </package>
   </project>
