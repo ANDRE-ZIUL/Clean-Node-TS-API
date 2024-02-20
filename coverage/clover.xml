@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708439691195" clover="3.2.0">
-  <project timestamp="1708439691196" name="All files">
-    <metrics statements="56" coveredstatements="45" conditionals="3" coveredconditionals="3" methods="11" coveredmethods="11" elements="70" coveredelements="59" complexity="0" loc="56" ncloc="56" packages="6" files="11" classes="11"/>
+<coverage generated="1708440867265" clover="3.2.0">
+  <project timestamp="1708440867265" name="All files">
+    <metrics statements="61" coveredstatements="50" conditionals="3" coveredconditionals="3" methods="13" coveredmethods="13" elements="77" coveredelements="66" complexity="0" loc="61" ncloc="61" packages="7" files="12" classes="12"/>
     <package name="data.usecases.add-account">
       <metrics statements="10" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="db-add-account-protocols.ts" path="C:\Cursos\clean-node-api\src\data\usecases\add-account\db-add-account-protocols.ts">
@@ -19,6 +19,17 @@
         <line num="12" count="5" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
         <line num="14" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.criptography">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="bcrypt-adapter.ts" path="C:\Cursos\clean-node-api\src\infra\criptography\bcrypt-adapter.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
       </file>
     </package>
     <package name="presentation.controllers.signup">
