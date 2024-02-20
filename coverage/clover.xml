@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708442680400" clover="3.2.0">
-  <project timestamp="1708442680400" name="All files">
-    <metrics statements="61" coveredstatements="50" conditionals="3" coveredconditionals="3" methods="13" coveredmethods="13" elements="77" coveredelements="66" complexity="0" loc="61" ncloc="61" packages="7" files="12" classes="12"/>
+<coverage generated="1708452916826" clover="3.2.0">
+  <project timestamp="1708452916826" name="All files">
+    <metrics statements="74" coveredstatements="57" conditionals="3" coveredconditionals="3" methods="17" coveredmethods="15" elements="94" coveredelements="75" complexity="0" loc="74" ncloc="74" packages="9" files="14" classes="14"/>
     <package name="data.usecases.add-account">
       <metrics statements="10" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="db-add-account-protocols.ts" path="C:\Cursos\clean-node-api\src\data\usecases\add-account\db-add-account-protocols.ts">
@@ -30,6 +30,31 @@
         <line num="7" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.db.mongodb.account-repository">
+      <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="account.ts" path="C:\Cursos\clean-node-api\src\infra\db\mongodb\account-repository\account.ts">
+        <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.db.mongodb.helpers">
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="mongo-helper.ts" path="C:\Cursos\clean-node-api\src\infra\db\mongodb\helpers\mongo-helper.ts">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
       </file>
     </package>
     <package name="presentation.controllers.signup">
