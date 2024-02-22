@@ -4,6 +4,7 @@ import { Authentication } from './../../../domain/usecases/authentication'
 
 export class DBAuthentication implements Authentication {
   private readonly loadAccountByEmailRepository: LoadAccountByEmailRepository
+
   constructor (loadAccountByEmailRepository: LoadAccountByEmailRepository) {
     this.loadAccountByEmailRepository = loadAccountByEmailRepository
   }
