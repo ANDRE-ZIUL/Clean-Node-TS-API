@@ -59,3 +59,4 @@ describe('DBAuthentication UseCase', () => {
     const accessToken = await sut.auth(makeFakeAuthentication())
     expect(accessToken).toBe(null)
   })
+})
