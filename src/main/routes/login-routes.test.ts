@@ -1,8 +1,11 @@
+import { hash } from 'bcrypt'
+import { Collection } from 'mongodb'
 import request from 'supertest'
 import { MongoHelper } from '../../infra/db/mongodb/helpers/mongo-helper'
 import app from '../config/app'
 const MONGO_URL = 'mongodb://localhost:27017/jest'
 
+let accountCollection: Collection
 describe('Login Routes', () => {
   test('Should return an account on success', async () => {
     beforeAll(async () => {
@@ -14,19 +17,28 @@ describe('Login Routes', () => {
     })
 
     beforeEach(async () => {
-      const accountCollection = await MongoHelper.getCollection('accounts')
+      accountCollection = await MongoHelper.getCollection('accounts')
       await accountCollection.deleteMany({})
     })
 
-    describe('POST /signup', () => {
-      test('Should return 200 on signup', async () => {
+    describe('', () => {
+
+    })
+
+    describe('POST /login', () => {
+      test('Should return 200 on login', async () => {
+        const password = await hash('senha123', 12)
+        await accountCollection.insertOne({
+          name: 'André',
+          email: 'andre@mail.com',
+          password
+
+        })
         await request(app)
-          .post('/api/signup')
+          .post('/api/login')
           .send({
-            name: 'André',
             email: 'andre@mail.com',
-            password: 'senha123',
-            passwordConfirmation: 'senha123'
+            password: 'senha123'
           })
           .expect(200)
       })
