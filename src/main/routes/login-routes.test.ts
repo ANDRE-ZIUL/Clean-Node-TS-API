@@ -3,7 +3,7 @@ import { MongoHelper } from '../../infra/db/mongodb/helpers/mongo-helper'
 import app from '../config/app'
 const MONGO_URL = 'mongodb://localhost:27017/jest'
 
-describe('SignUp Routes', () => {
+describe('Login Routes', () => {
   test('Should return an account on success', async () => {
     beforeAll(async () => {
       await MongoHelper.connect(MONGO_URL)
@@ -18,16 +18,18 @@ describe('SignUp Routes', () => {
       await accountCollection.deleteMany({})
     })
 
-    test('Should return an account on success', async () => {
-      await request(app)
-        .get('/api/signup')
-        .send({
-          name: 'André',
-          email: 'andre@mail.com',
-          password: 'senha123',
-          passwordConfirmation: 'senha123'
-        })
-        .expect(200)
+    describe('POST /signup', () => {
+      test('Should return 200 on signup', async () => {
+        await request(app)
+          .post('/api/signup')
+          .send({
+            name: 'André',
+            email: 'andre@mail.com',
+            password: 'senha123',
+            passwordConfirmation: 'senha123'
+          })
+          .expect(200)
+      })
     })
   })
 })
